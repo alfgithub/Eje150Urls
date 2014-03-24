@@ -22,7 +22,6 @@ public final class InterfaceEje15 extends javax.swing.JFrame {
     static Connection con;
     static int opcionUsuario = 1;
     static Usuario usuarioWebs = null;
-    //kñldsafkñhl
     
 
     public static void establecerConexion(){       
