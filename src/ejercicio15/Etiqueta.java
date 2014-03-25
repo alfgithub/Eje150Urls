@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package ejercicio15;
 
 /**
@@ -23,12 +22,12 @@ public class Etiqueta {
     public Etiqueta(String texto) {
         this.texto = texto;
     }
-    
+
     @Override
     public String toString() {
         return this.getTexto();
     }
-    
+
     @Override
     public int hashCode() {
         return this.id * this.texto.length();
@@ -37,13 +36,13 @@ public class Etiqueta {
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Etiqueta) {
-            Etiqueta e = (Etiqueta)obj;
+            Etiqueta e = (Etiqueta) obj;
             return this.texto.equals(e.texto);
         } else {
-                return false;
-            }
+            return false;
+        }
     }
-    
+
     public int getId() {
         return id;
     }
